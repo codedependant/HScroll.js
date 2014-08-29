@@ -1,4 +1,4 @@
-class hScroll 
+class HScroll 
   
   constructor: (element, options={})->
     @element = if element.nodeType? then element else document.querySelector(element)

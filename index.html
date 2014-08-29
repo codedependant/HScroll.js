@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+      <meta charset="utf-8">
+      <title>hScroll.js - Vertical scrolling on hover</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width">
+      <link rel="shortcut icon" href="/favicon.ico">
+
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: "Helvetica Neue", "Helvetica", sans-serif;
+          padding: 2em;
+        }
+
+        h1 {
+          font-weight: 100;
+        }
+
+        .scroll {
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          width: 100%;
+          background: whitesmoke;
+        }
+
+        .scroll li, .transform li {
+          display: inline-block;
+          padding: 5em;
+          margin: 5em;
+          background-color: dodgerblue;
+          transition: 0.6s all;
+        }
+        .scroll li:hover, .transform li:hover {
+          background-color: indianred;
+          transform: scale(1.1);
+        }
+  </style>
+
+  </head>
+  <body>
+    <h1>Hover over the edges to scroll</h1>
+    <ul class='scroll'><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li><li>item</li></ul>
+
+
+    <script src="hScroll.js"></script>
+
+    <script>
+      window.onload = function(){
+        new HScroll(".scroll")
+      }
+    </script>
+
+  </body>
+</html>
