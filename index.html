@@ -18,7 +18,7 @@
           padding: 2em;
           max-width: 960px;
           margin: auto;
-
+          line-height: 1.6em;
         }
 
         
@@ -45,11 +45,13 @@
           transform: scale(1.1);
         }
         section{
-          margin-bottom: 3rem;
+          margin-bottom: 5em;
         }
         .heading{
-          margin-bottom: 3rem;
+          margin-bottom: 1.5em;
           font-weight: 900;
+          font-size: 4rem;
+          text-align: center;
         }
   </style>
   <link href="//fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
@@ -58,17 +60,22 @@
 
   </head>
   <body>
-    <h1 class="heading">HScroll.js</h1>
+    <h1 class="heading">
+      HScroll.js
+      <!-- <div> -->
+        <iframe src="http://ghbtns.com/github-btn.html?user=codedependant&repo=HScroll.js&type=watch" allowtransparency="true" frameborder="0" scrolling="0"width="62" height="20"></iframe>
+      <!-- </div> -->
+    </h1>
     <section>
-      <h2>Introduction</h2>
-      <p>A simple, dependency free javascript library that enables vertically scrolling an overflowed element by hovering over on its edges.</p>
-      <p>The scrolling speed is mapped to a gradient, speeding up close to the edges and tapering off to zero in the middle. For a use case checkout Apples excellent <a href="http://www.apple.com/30-years/">30 years website</a></p>
+      <p>A simple, dependency free javascript library that enables vertically scrolling an overflowed element by hovering over on its edges.<br>
+      The scrolling speed is mapped to a gradient, speeding up close to the edges and tapering off to zero in the middle.<br>
+      For a use case checkout Apples excellent <a href="http://www.apple.com/30-years/">30 years anniversary website</a></p>
     </section>
 
     <section>
     <h2>How to use it</h2>
     <pre><code class="language-javascript">hScroll = new HScroll(".scroll");
-hScroll.destroy();</code>
+// hScroll.destroy(); if the element is removed from the page</code>
     </pre>
     </section>
 
@@ -76,7 +83,7 @@ hScroll.destroy();</code>
     <h2>Demo</h2>
     <ul class='scroll'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
     </section>
-
+    <a href="https://github.com/codedependant/HScroll.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
     <script src="HScroll.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
     <script>
