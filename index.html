@@ -5,7 +5,7 @@
       <title>HScroll.js - Vertical scrolling on hover</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width">
-      <link rel="shortcut icon" href="/favicon.ico?v=1">
+      <link rel="shortcut icon" href="/favicon.ico?v=2">
 
       <style>
         * {
@@ -14,21 +14,26 @@
 
         body {
           font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-          background-color: whitesmoke;
+          background-color: #F8F8F8;
+          color: #4e4e4e;
           padding: 2em;
           max-width: 960px;
           margin: auto;
           line-height: 1.6em;
+
         }
 
-        
+        ul{
+          margin: 0;
+          padding: 0;
+        }
 
         .scroll {
           white-space: nowrap;
+          overflow: scroll;
           -webkit-overflow-scrolling: touch;
           width: 100%;
           background-color: white;
-          border: 2em solid white;
           box-shadow: inset -0px 0px 10px rgba(0, 0, 0, 0.11);
         }
 
@@ -38,11 +43,6 @@
           height: 16.81em;
           margin: 2em;
           background-color: rgb(103, 155, 206);
-          transition: 0.6s all;
-        }
-        .scroll li:hover, .transform li:hover {
-          background-color: rgb(85, 129, 173);
-          transform: scale(1.1);
         }
         section{
           margin-bottom: 5em;
@@ -67,7 +67,7 @@
       <!-- </div> -->
     </h1>
     <section>
-      <p>A simple, dependency free javascript library that enables vertically scrolling an overflowed element by hovering over on its edges.<br>
+      <p>A simple, dependency free javascript library that enables vertically scrolling of an overflowed element by hovering over its edges.<br>
       The scrolling speed is mapped to a gradient, speeding up close to the edges and tapering off to zero in the middle.<br>
       For a use case checkout Apples excellent <a href="http://www.apple.com/30-years/">30 years anniversary website</a></p>
     </section>
@@ -88,7 +88,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
     <script>
       window.onload = function(){
-        new HScroll(".scroll")
+        new HScroll(".scroll");
       }
     </script>
 
